@@ -6,7 +6,7 @@ ADMIN_ID = 775293298  # o'z telegram id'ing
 
 ISM, TEL = range(2)
 
-menu = [["📝 Ariza yuborish", "📞 Bog'lanish"]]
+menu = [["📝 Ariza", "📞 Bog'lanish"]]
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     reply_markup = ReplyKeyboardMarkup(menu, resize_keyboard=True)
@@ -53,7 +53,7 @@ def main():
 
     app.add_handler(CommandHandler("start", start))
     app.add_handler(conv)
-    app.add_handler(MessageHandler(filters.Regex("📞 Bog'lanish"), boglanish))
+    app.add_handler(MessageHandler(filters.Regex("📞 Bog'"), boglanish))
 
     print("Bot ishlayapti...")
     app.run_polling()
