@@ -15,7 +15,7 @@ async def message_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if text == "📝 Ariza":
         await update.message.reply_text("Ismingizni yozing:")
     elif text == "📞 Bog'lanish":
-        await update.message.reply_text("📞 Telefon: +998901234567")
+        await update.message.reply_text("📞 Telefon: +998945051515")
     else:
         await update.message.reply_text("Tugmadan foydalaning")
 
